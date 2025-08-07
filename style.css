@@ -487,3 +487,76 @@ h1 {
     transform: translateY(-3px);
   }
 }
+@media (max-height: 627px) {
+  .container{
+
+  .container {
+    font-size: 0.93em;
+    padding: 13px;
+    max-width: 340px;
+  }
+  .logo {
+    width: 62px;
+  }
+  h1 {
+    font-size: 17px;
+  }
+  .link-card {
+    font-size: 0.97em;
+    padding: 9px 12px;
+  }
+  .text, .desc {
+    font-size: 12px;
+  }
+  .con2 {
+    font-size: clamp(22px, 4vw, 50px);
+    margin: 12px 0 18px 0;
+  }
+  .bottom-icons img {
+    width: 19px;
+  }
+  .icon-label span {
+    font-size: 0.91em;
+  }
+
+
+
+
+
+
+  
+  }
+}
+
+    
+@media (max-height: 574px) {
+  .container {
+    font-size: 0.89em;
+    padding: 10px;
+    max-width: 320px;
+  }
+  .logo {
+    width: 56px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  .link-card {
+    font-size: 0.93em;
+    padding: 7px 10px;
+  }
+  .text, .desc {
+    font-size: 11px;
+  }
+  .con2 {
+    font-size: clamp(18px, 3.5vw, 40px);
+    margin: 8px 0 14px 0;
+  }
+  .bottom-icons img {
+    width: 16px;
+  }
+  .icon-label span {
+    font-size: 0.87em;
+  }
+}
+ 
