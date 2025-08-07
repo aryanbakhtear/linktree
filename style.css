@@ -1,0 +1,238 @@
+
+
+@font-face {
+  font-family: 'Navbar';
+  src: url('navbar.woff2') format('woff2'),
+       url('navbar.woff') format('woff'),
+       url(navbar.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply K24 for all text by default */
+body {
+
+  background: #8142f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Apply Navbar font for all English text elements */
+h1,
+.check,
+.link-card span,
+.link-card .dot,
+.bottom-icons span {
+  font-family: 'Navbar', 'Poppins', Arial, sans-serif;
+  letter-spacing: 0.01em;
+  font-size: 0.75em; /* Much smaller English text */
+}
+
+/* Make English text stay small on hover too */
+.link-card:hover span,
+.icon-label:hover span {
+  font-size: 0.85em; /* Slightly larger on hover, but still small */
+  font-weight: 700;
+  color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  max-width: 380px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 25px;
+  text-align: center;
+  /* Add a white glow shadow */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1), 0 0 32px 4px rgba(255,255,255,0.7);
+}
+
+.logo {
+  width: 90px;
+  margin: 0 auto 10px;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.desc {
+  font-size: 13px;
+  color: #000000;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.check {
+  background: #ddffe2;
+  color: #2e7d32;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.link-card {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff; /* Match the box background */
+  border: 2.5px solid #8142f5;
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 
+    background 0.3s,
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s;
+}
+
+.link-card:hover {
+  background: #f0e7e2;
+  transform: scale(1.08);
+  box-shadow: 0 0 16px 4px #8142f5, 0 4px 24px rgba(129,66,245,0.10);
+  border-color: #8142f5;
+}
+
+.link-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.link-card span {
+  font-family: Navbar;
+  flex: 1;
+  text-align: left;
+  font-weight: 500;
+  color: #444;
+  transition: font-weight 0.2s, font-size 0.2s;
+  font-size: 16px;
+  text-align: center;
+}
+
+.link-card:hover span {
+  font-weight: 700;
+  font-size: 1.13em;
+}
+
+.link-card .dot {
+  font-size: 20px;
+  color: #aaa;
+}
+
+.bottom-icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.icon-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-icons img {
+  width: 24px;
+  filter: brightness(0.5);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: 
+    transform 0.2s,
+    filter 0.2s,
+    box-shadow 0.2s;
+}
+
+.icon-label:hover img {
+  transform: scale(1.18);
+  filter: brightness(1) drop-shadow(0 0 8px #fff);
+  box-shadow: 0 4px 24px rgba(129,66,245,0.10);
+}
+
+.icon-label span {
+  margin-top: 6px;
+  font-size: 0.95em;
+  color: #888;
+  font-weight: 500;
+  text-align: center;
+  transition: font-weight 0.2s, font-size 0.2s, color 0.2s;
+}
+
+.icon-label:hover span {
+  font-weight: 700;
+  font-size: 1.13em;
+  color: #333;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+@media (max-width: 396px) {
+  .container {
+  width: 85%;
+  
+    padding: 10px 2vw;
+    border-radius: 12px;
+  }
+  .logo {
+    width: 54px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  .desc {
+    font-size: 11px;
+  }
+  .link-card {
+    padding: 8px 4px;
+    font-size: 0.9em;
+    border-radius: 10px;
+  }
+  .link-card img {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+  }
+  .link-card .dot {
+    font-size: 14px;
+  }
+  .bottom-icons {
+    gap: 12px;
+    margin-top: 18px;
+  }
+  .bottom-icons img {
+    width: 16px;
+  }
+  .icon-label span {
+    font-size: 0.8em;
+  }
+}
+.text{
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  font-family: Navbar;
+ text-align: center;
+}
